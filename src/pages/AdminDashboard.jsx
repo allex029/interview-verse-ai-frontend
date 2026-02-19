@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API = `${import.meta.env.VITE_API_URL}/api`;
+import API_URL from "../api";
+const API = `${API_URL}/api`;
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState(null);
